@@ -5,6 +5,7 @@ terraform {
       # Specify what version of the provider we are going to utilise
       source  = "hashicorp/azurerm"
       version = ">= 3.92.0"
+      skip_provider_registration = true
     }
     random = {
       source  = "hashicorp/random"
